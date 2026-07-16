@@ -1,9 +1,11 @@
 <script setup lang="ts">
 import HeroSection from './sections/HeroSection.vue'
+import ProjectSection from './sections/ProjectSection.vue'
 </script>
 
 <template>
-  <main class="min-h-screen bg-zinc-900 w-full overflow-x-hidden">
+  <main class="min-h-screen bg-background w-full overflow-x-hidden">
     <HeroSection />
+    <ProjectSection />
   </main>
 </template>
