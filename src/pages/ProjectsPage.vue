@@ -1,6 +1,7 @@
 <script setup lang="ts">
 import { onMounted } from 'vue'
 import Navbar from '../components/Navbar.vue'
+import CTA from '../sections/CTA.vue'
 import { projects } from '../data/projects'
 
 onMounted(() => {
@@ -24,14 +25,16 @@ onMounted(() => {
           class="glass-card rounded-2xl p-unit-md md:p-unit-lg group transition-all duration-300 hover:-translate-y-2 flex flex-col relative overflow-hidden"
         >
           <!-- Project Thumbnail (or placeholder) -->
-          <div class="w-full h-56 md:h-64 rounded-xl overflow-hidden mb-unit-md shadow-lg bg-surface-variant flex items-center justify-center">
+          <div class="w-full rounded-xl overflow-hidden mb-unit-md shadow-lg bg-surface-variant flex items-center justify-center relative group-hover:shadow-primary/20 transition-all duration-300">
             <img
               v-if="project.image"
               :src="project.image"
               :alt="project.title"
-              class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
+              class="w-full h-auto object-cover group-hover:scale-105 transition-transform duration-700"
             />
-            <span v-else class="text-on-surface-variant/50 font-label-mono text-sm uppercase">Coming Soon</span>
+            <div v-else class="w-full aspect-video flex items-center justify-center">
+              <span class="text-on-surface-variant/50 font-label-mono text-sm uppercase">Coming Soon</span>
+            </div>
           </div>
 
           <!-- Category Label & Number -->
@@ -74,5 +77,8 @@ onMounted(() => {
         </div>
       </div>
     </div>
+    
+    <!-- Shared CTA -->
+    <CTA />
   </div>
 </template>

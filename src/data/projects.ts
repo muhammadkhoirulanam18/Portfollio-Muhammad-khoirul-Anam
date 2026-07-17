@@ -13,6 +13,14 @@ import youtapBosImg from '../assets/Thumbnail/Youtap-BOS.avif'
 import energyEventImg from '../assets/Thumbnail/Energy-Event.avif'
 import laundryImg from '../assets/Thumbnail/Laundry.avif'
 import youtapLoyaltyImg from '../assets/Thumbnail/Youtap-Loyalty.avif'
+import youtapKioskImg from '../assets/Thumbnail/Youtap-Kiosk.webp'
+import youtapPayImg from '../assets/Thumbnail/Youtap-pay.webp'
+import youtapSolutionImg from '../assets/Thumbnail/Youtap-Solution.webp'
+import travgoImg from '../assets/Thumbnail/Travgo.webp'
+import homefreshImg from '../assets/Thumbnail/Homefresh.webp'
+import serenityBaliImg from '../assets/Thumbnail/Serenity Bali.webp'
+import windofaImg from '../assets/Thumbnail/Windofa.webp'
+import serviceBrankasImg from '../assets/Thumbnail/Service Brankas.webp'
 
 export const projects: Project[] = [
   {
@@ -28,7 +36,7 @@ export const projects: Project[] = [
     category: 'Website',
     description: 'Empower your customers and streamline business operations through a modern Self Order Kiosk application. Designed to handle multiple order types and payment methods, this solution helps reduce queue times, improve efficiency, and enhance overall customer satisfaction.',
     stack: ['Webflow'],
-    image: '', // Placeholder
+    image: youtapKioskImg,
     link: 'https://www.kiosk.youtap.id/',
   },
   {
@@ -44,7 +52,7 @@ export const projects: Project[] = [
     category: 'Website',
     description: 'I created the Youtap PAY website to introduce a seamless and user-friendly payment solution for businesses. The website showcases how Youtap PAY simplifies payment processes and helps expand customer reach by integrating multiple payment methods.',
     stack: ['Webflow'],
-    image: '', // Placeholder
+    image: youtapPayImg,
     link: 'https://www.payment.youtap.id/',
   },
   {
@@ -60,7 +68,7 @@ export const projects: Project[] = [
     category: 'Website',
     description: 'I designed the Youtap Solution website to showcase a suite of personalized digital solutions tailored to diverse business needs. The site highlights Youtap’s flexibility in offering everything from standard QRIS payments to fully customized enterprise solutions.',
     stack: ['Webflow'],
-    image: '', // Placeholder
+    image: youtapSolutionImg,
     link: 'https://www.solution.youtap.id/',
   },
   {
@@ -68,7 +76,7 @@ export const projects: Project[] = [
     category: 'Website',
     description: 'Redesign of the "Cheap Domestic Flight Tickets" page on Travgo.com to enhance visual quality and user experience. This process involved modernizing the design into a more structured layout, optimizing content placement for better information discovery, and ensuring full responsiveness across all devices.',
     stack: ['WordPress', 'Elementor', 'Wpbakery'],
-    image: '', // Placeholder
+    image: travgoImg,
     link: 'https://travgo.com/tiket-pesawat-domestik-murah/',
   },
   {
@@ -76,7 +84,7 @@ export const projects: Project[] = [
     category: 'Website',
     description: 'Redesign of the Imported Fruits page on the Homeresh Indonesia website using WordPress. This process included improving the visual appearance to make it more modern and appealing, restructuring the content layout to enhance readability, and optimizing the user experience.',
     stack: ['WordPress', 'Elementor', 'Wpbakery'],
-    image: '', // Placeholder
+    image: homefreshImg,
     link: 'https://homefresh-indonesia.com/buah-import/',
   },
   {
@@ -84,7 +92,7 @@ export const projects: Project[] = [
     category: 'Website',
     description: 'I designed and developed the DINAMIS Psychology Center website using WordPress to present its professional psychological consultation services in a clear and approachable way. The site offers information about various services including individual, couple, and family counseling.',
     stack: ['WordPress', 'Elementor'],
-    image: '', // Placeholder
+    image: '', // Placeholder, no image uploaded for this yet
     link: 'https://dinamispsikologi.id/',
   },
   {
@@ -92,7 +100,7 @@ export const projects: Project[] = [
     category: 'Website',
     description: 'Development and redesign of the Vegan Restaurant Bali website for Serenity Bali using Wix. This project included improving the website layout structure, refining visual elements, and enhancing the user experience to create a more modern, responsive, and user-friendly interface.',
     stack: ['Wix'],
-    image: '', // Placeholder
+    image: serenityBaliImg,
     link: 'https://www.serenitybali.com/',
   },
   {
@@ -100,7 +108,7 @@ export const projects: Project[] = [
     category: 'Website',
     description: 'A modern company profile website for premium digital t-shirt printing services, built using WordPress. The website was designed with a clean, responsive, and conversion-focused layout to showcase high-quality DTG and DTF printing services with sharp print results.',
     stack: ['WordPress', 'Wpbakery'],
-    image: '', // Placeholder
+    image: windofaImg,
     link: 'https://windofaapparel.com/sablon-digital/',
   },
   {
@@ -124,7 +132,7 @@ export const projects: Project[] = [
     category: 'Website',
     description: 'A professional safe repair and security service website built using WordPress for Service Brankas, a company specializing in safe repair, unlocking, maintenance, relocation, and security storage solutions across Indonesia. The website was designed with a responsive and service-focused layout.',
     stack: ['WordPress', 'Wpbakery'],
-    image: '', // Placeholder
+    image: serviceBrankasImg,
     link: 'https://servicebrankas.com/jasa-buka-brankas-surabaya/',
   },
   {
