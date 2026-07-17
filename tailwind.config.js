@@ -65,10 +65,10 @@ export default {
         "full": "0.75rem"
       },
       spacing: {
-        "card-gap": "64px",
-        "gutter": "32px",
+        "card-gap": "48px",
+        "gutter": "24px",
         "unit-lg": "24px",
-        "section-padding": "120px",
+        "section-padding": "80px",
         "unit-md": "16px",
         "container-max": "1200px",
         "unit-xs": "4px",

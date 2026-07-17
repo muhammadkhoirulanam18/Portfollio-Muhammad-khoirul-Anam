@@ -3,23 +3,21 @@
     <div class="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center gap-6">
       
       <!-- Kiri: Logo & Nama Brand -->
-      <div class="flex items-center gap-3">
-        <div class="w-8 h-8 rounded-full border-4 border-blue-500 flex items-center justify-center">
-          <div class="w-2 h-2 bg-blue-500 rounded-full"></div>
-        </div>
-        <span class="text-white font-bold text-xl tracking-wide">Muhammad Khoirul Anam</span>
-      </div>
+      <router-link to="/" class="flex items-center gap-3 group">
+        <img :src="profileImg" alt="Profile" class="w-10 h-10 rounded-full object-cover group-hover:border-primary transition-colors" />
+        <span class="font-label-mono text-sm font-bold text-primary group-hover:text-secondary transition-colors lowercase">Muhammad Khoirul Anam</span>
+      </router-link>
 
       <!-- Tengah: Menu Navigasi -->
       <nav class="flex flex-wrap justify-center gap-8 text-sm font-medium">
-        <a 
+        <router-link 
           v-for="menu in navigation" 
           :key="menu.name" 
-          :href="menu.link" 
+          :to="menu.link" 
           class="hover:text-white transition-colors duration-200"
         >
           {{ menu.name }}
-        </a>
+        </router-link>
       </nav>
 
       <!-- Kanan: Icon Media Sosial -->
@@ -53,13 +51,13 @@
 
 <script setup>
 import { ref, computed } from 'vue'
+import profileImg from '../assets/images/PROFILE.png'
 
 // Data Navigasi Dinamis
 const navigation = ref([
-  { name: 'Work', link: '#' },
   { name: 'Project', link: '/projects' },
-  { name: 'Experience', link: '#' },
-  { name: 'Contact', link: '#' },
+  { name: 'Experience', link: '/#experience' },
+  { name: 'Contact', link: '/contact' },
 ])
 
 // Data Sosial Media Dinamis dengan inline SVG

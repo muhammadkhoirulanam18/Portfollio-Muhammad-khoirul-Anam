@@ -13,18 +13,18 @@
       </p>
 
       <div class="flex flex-wrap items-center justify-center gap-4 mb-16">
-        <a 
-          href="#projects" 
+        <router-link 
+          to="/projects" 
           class="inline-flex items-center justify-center px-8 py-3.5 border-2 border-surface-variant text-primary font-label-mono uppercase tracking-wider rounded-full hover:bg-surface-variant transition-all duration-300 transform hover:-translate-y-0.5"
         >
           See all projects
-        </a>
-        <a 
-          href="mailto:mkhoirulanam930@gmail.com" 
+        </router-link>
+        <router-link 
+          to="/contact" 
           class="inline-flex items-center justify-center px-8 py-3.5 bg-secondary text-on-secondary font-label-mono uppercase tracking-wider rounded-full shadow-[0_0_20px_rgba(212,175,55,0.3)] hover:shadow-[0_0_30px_rgba(212,175,55,0.5)] transition-all duration-300 transform hover:-translate-y-0.5 hover:scale-105"
         >
-          Email Me
-        </a>
+          Contact Me
+        </router-link>
       </div>
 
       <!-- Image Area / Jarak antara gambar dengan button (mb-16 di atas mengatur jarak ke atas, mb-8 mengatur jarak ke bawah) -->

@@ -77,7 +77,7 @@ const featuredProjects = computed(() => projects.filter(p => p.image).slice(0, 4
       </div> 
 
       <!-- See More Project Button -->
-      <div class="text-center pb-section-padding">
+      <div class="text-center">
         <router-link
           to="/projects"
           class="inline-block px-unit-lg py-unit-md border border-secondary text-secondary rounded-lg font-bold uppercase tracking-widest text-sm hover:bg-secondary/10 transition-all duration-300 font-label-mono"
