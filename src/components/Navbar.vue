@@ -1,7 +1,7 @@
 <script setup lang="ts">
 import { ref } from 'vue'
 
-const navigation_links = ref(["Work", "Experience", "Contact"])
+const navigation_links = ref(["Work", "Project", "Experience", "Contact"])
 </script>
 
 <template>

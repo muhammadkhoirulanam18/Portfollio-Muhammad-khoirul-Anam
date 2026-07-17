@@ -1,15 +1,11 @@
 <script setup lang="ts">
 import { ref, onMounted, onUnmounted } from 'vue';
-import HeroSection from './sections/HeroSection.vue'
-import ProjectSection from './sections/ProjectSection.vue'  
-import ExperienceSection from './sections/ExperienceSection.vue'
-import CTA from './sections/CTA.vue';
 import TheFooter from './components/TheFooter.vue';
 
 const showScrollButton = ref(false);
 
 const handleScroll = () => {
-  // Munculkan button saat user scroll lewat 300px (melewati bagian awal hero)
+  // Munculkan button saat user scroll lewat 300px
   showScrollButton.value = window.scrollY > 300;
 };
 
@@ -23,11 +19,12 @@ onUnmounted(() => {
 </script>
 
 <template>
-  <main id="top" class="min-h-screen bg-background w-full overflow-x-hidden relative">
-    <HeroSection />
-    <ProjectSection />
-    <ExperienceSection />
-    <CTA />
+  <main id="top" class="min-h-screen bg-background w-full overflow-x-hidden relative flex flex-col">
+    <!-- Router View for pages (HomeView, ProjectsView) -->
+    <div class="flex-grow">
+      <router-view></router-view>
+    </div>
+    
     <TheFooter />
 
     <!-- Scroll to Top Button -->

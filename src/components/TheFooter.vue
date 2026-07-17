@@ -57,6 +57,7 @@ import { ref, computed } from 'vue'
 // Data Navigasi Dinamis
 const navigation = ref([
   { name: 'Work', link: '#' },
+  { name: 'Project', link: '/projects' },
   { name: 'Experience', link: '#' },
   { name: 'Contact', link: '#' },
 ])
