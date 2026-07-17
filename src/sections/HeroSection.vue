@@ -27,7 +27,7 @@ I’m currently open to full-time (WFH/WFO), freelance, part-time, or project-ba
             <!-- Action Buttons Group -->
             <div class="flex items-center gap-3">
               <button class="bg-secondary text-on-secondary px-5 py-3 md:px-unit-lg md:py-unit-md rounded-lg font-label-mono text-[11px] md:text-sm font-bold hover:bg-primary-container transition-all whitespace-nowrap">Contact Me</button>
-              <a href="https://drive.google.com/file/d/1d5K1AVdEINk3C1Pa0Yq0tYOdLdtAJvgq/view?usp=drive_link" download class="border border-secondary/30 text-secondary px-5 py-3 md:px-unit-lg md:py-unit-md rounded-lg font-label-mono text-[11px] md:text-sm font-bold hover:bg-secondary/5 transition-all flex items-center gap-2 whitespace-nowrap">
+              <a href="https://drive.google.com/drive/folders/1MMk6e4dv27pdPVRk3e37lqNWwMzffBN4?usp=drive_link" download class="border border-secondary/30 text-secondary px-5 py-3 md:px-unit-lg md:py-unit-md rounded-lg font-label-mono text-[11px] md:text-sm font-bold hover:bg-secondary/5 transition-all flex items-center gap-2 whitespace-nowrap">
                 Download CV
                 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-4 h-4">
                   <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
