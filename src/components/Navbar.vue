@@ -7,7 +7,7 @@ const navigation_links = ref(["Work", "Experience", "Contact"])
 <template>
   <nav class="fixed top-0 w-full z-50 bg-background/80 nav-blur border-b border-primary/10">
     <div class="flex justify-between items-center px-gutter py-unit-md max-w-container-max mx-auto">
-      <a class="font-headline-md text-headline-md font-bold text-primary" href="#">A.</a>
+      <a class="font-headline-md text-headline-md font-bold text-primary" href="#">mkh.</a>
       <div class="hidden md:flex gap-unit-lg">
         <a :key="link" class="font-label-mono text-label-mono text-on-surface-variant hover:text-secondary transition-colors duration-300" href="#" v-for="link in navigation_links">
           {{ link }}

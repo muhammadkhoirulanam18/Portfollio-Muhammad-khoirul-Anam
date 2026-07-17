@@ -28,7 +28,7 @@ const experiences = [
   },
   {
     company: 'Dinamis Biro Psikologi',
-    role: 'Website Development Internship',
+    role: 'Web Developer Internship',
     period: 'February 2024 - July 2024',
     description: [
       'Manage and develop the company website using WordPress, by designing new features according to business strategy, as well as ensuring security and optimal performance through regular updates and collaboration with the content design team. SEO optimization and monitoring of industry trends to increase site visibility and traffic.',
@@ -55,7 +55,7 @@ const hover = (index: number) => {
   <section id="experience" class="w-full bg-background py-section-padding px-4 md:px-gutter text-on-surface">
     <div class="max-w-container-max mx-auto">
       <div class="mb-12">
-        <div class="text-brand-yellow font-label-mono uppercase tracking-widest mb-4">The Companies I've worked with</div>
+        <div class="text-secondary font-label-mono uppercase tracking-widest mb-4">The Companies I've worked with</div>
         <h1 class="text-display-lg-mobile md:text-display-lg font-display-lg uppercase text-primary">experience</h1>
       </div>
 
@@ -98,7 +98,7 @@ const hover = (index: number) => {
                 <a 
                   :href="exp.link" 
                   target="_blank" 
-                  class="inline-flex items-center gap-2 text-brand-yellow hover:text-white transition-colors duration-300 font-label-mono uppercase tracking-wider mt-4 w-fit"
+                  class="inline-flex items-center gap-2 text-secondary hover:text-white transition-colors duration-300 font-label-mono uppercase tracking-wider mt-4 w-fit"
                   @click.stop
                 >
                   <span class="link-text">Visit Website</span>
