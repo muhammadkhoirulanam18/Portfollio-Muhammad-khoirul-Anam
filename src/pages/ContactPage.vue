@@ -21,8 +21,7 @@
             </svg>
           </div>
           <h3 class="text-xl font-medium mb-4 text-gray-200">Email Address</h3>
-          <p class="text-gray-400 text-sm leading-6">support@example.com</p>
-          <p class="text-gray-400 text-sm leading-6">contact@example.com</p>
+          <p class="text-gray-400 text-sm leading-6">mkhoirulanam930@gmail.com</p>
         </div>
 
         <!-- Card 2: Phone -->
@@ -34,8 +33,7 @@
             </svg>
           </div>
           <h3 class="text-xl font-medium mb-4 text-gray-200">Call Us</h3>
-          <p class="text-gray-400 text-sm leading-6">+1 (252) 555-0126</p>
-          <p class="text-gray-400 text-sm leading-6">+1 (252) 555-0356</p>
+          <p class="text-gray-400 text-sm leading-6">0857 8392 8671</p>
         </div>
 
         <!-- Card 3: Location -->
@@ -47,9 +45,9 @@
               <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1 1 15 0Z" />
             </svg>
           </div>
-          <h3 class="text-xl font-medium mb-4 text-gray-200">United States - HQ</h3>
+          <h3 class="text-xl font-medium mb-4 text-gray-200">Indonesia - Jakarta</h3>
           <p class="text-gray-400 text-sm leading-relaxed">
-            2118 Thornridge Cir. Syracuse, Connecticut 35624
+            Jl. Gatot Subroto, Jakarta, Indonesia
           </p>
         </div>
 
@@ -74,12 +72,13 @@
             me—I will do my best to respond as promptly as possible.
           </p>
           <div class="pt-4">
-            <button 
-              @click="handleCtaClick"
-              class="px-6 py-3 border border-neutral-700 hover:border-blue-500 rounded-full text-sm font-medium tracking-wide transition-all duration-300 bg-transparent hover:bg-blue-500/10 active:scale-95"
+            <a 
+              href="https://wa.me/6285783928671"
+              target="_blank"
+              class="inline-block px-6 py-3 border border-neutral-700 hover:border-blue-500 rounded-full text-sm font-medium tracking-wide transition-all duration-300 bg-transparent hover:bg-blue-500/10 active:scale-95"
             >
               Book A Free Call Today
-            </button>
+            </a>
           </div>
         </div>
 
@@ -110,11 +109,6 @@ onMounted(() => {
   window.scrollTo(0, 0)
 })
 
-// Fungsi ketika CTA diklik
-const handleCtaClick = () => {
-  // Aksi yang ingin dijalankan, misal buka Calendly atau scroll ke form
-  alert('Redirecting to booking service...')
-}
 </script>
 
 <style scoped>

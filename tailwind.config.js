@@ -92,6 +92,15 @@ export default {
         "display-lg": ["56px", {"lineHeight": "1.1", "letterSpacing": "-0.02em", "fontWeight": "800"}],
         "label-mono": ["14px", {"lineHeight": "1.0", "letterSpacing": "0.05em", "fontWeight": "500"}],
         "body-md": ["16px", {"lineHeight": "1.6", "fontWeight": "400"}]
+      },
+      keyframes: {
+        float: {
+          '0%, 100%': { transform: 'translateY(0)' },
+          '50%': { transform: 'translateY(-20px)' },
+        }
+      },
+      animation: {
+        float: 'float 6s ease-in-out infinite',
       }
     },
   },

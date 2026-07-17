@@ -54,7 +54,7 @@ const hover = (index: number) => {
 <template>
   <section id="experience" class="w-full bg-background py-section-padding px-4 md:px-gutter text-on-surface">
     <div class="max-w-container-max mx-auto">
-      <div class="mb-12">
+      <div class="mb-12 text-center md:text-left">
         <div class="text-secondary font-label-mono uppercase tracking-widest mb-4">The Companies I've worked with</div>
         <h1 class="text-display-lg-mobile md:text-display-lg font-display-lg uppercase text-primary">experience</h1>
       </div>

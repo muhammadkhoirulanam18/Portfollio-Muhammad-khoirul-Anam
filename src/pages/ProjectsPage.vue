@@ -13,9 +13,9 @@ onMounted(() => {
     <!-- Shared Navbar -->
     <Navbar />
 
-    <div class="max-w-container-max mx-auto px-gutter mt-12 mb-section-padding">
+    <div class="max-w-container-max mx-auto px-gutter mt-12 mb-section-padding text-center md:text-left">
       <span class="font-label-mono text-label-mono text-secondary mb-unit-sm block uppercase">All Work</span>
-      <h1 class="font-headline-lg text-headline-lg text-primary mb-12">Selected Projects</h1>
+      <h1 class="font-display-lg text-display-lg-mobile md:text-display-lg text-primary mb-12">Selected Projects</h1>
 
       <div class="grid md:grid-cols-2 gap-unit-lg lg:gap-12">
         <div
