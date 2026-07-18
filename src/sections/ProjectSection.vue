@@ -57,7 +57,7 @@ const featuredProjects = computed(() => {
           </h3>
 
           <!-- Description -->
-          <p class="font-body-md text-body-md text-on-surface-variant leading-relaxed mb-6 flex-grow">
+          <p class="font-body-md text-body-md text-on-surface-variant leading-relaxed mb-6 flex-grow whitespace-pre-wrap">
             {{ project.description }}
           </p>
 

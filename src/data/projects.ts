@@ -21,6 +21,7 @@ import homefreshImg from '../assets/Thumbnail/Homefresh.webp'
 import serenityBaliImg from '../assets/Thumbnail/Serenity Bali.webp'
 import windofaImg from '../assets/Thumbnail/Windofa.webp'
 import serviceBrankasImg from '../assets/Thumbnail/Service Brankas.webp'
+import youtapIndonesiaImg from '../assets/Thumbnail/Youtap Indonesia.webp'
 
 export const projects: Project[] = [
   {
@@ -34,10 +35,10 @@ export const projects: Project[] = [
   {
     title: 'Youtap Indonesia',
     category: 'Website',
-    description: 'I developed the Youtap Indonesia website to showcase their digital solutions and business management tools. The project involved creating a modern, responsive layout that highlights key services and provides a seamless user experience for potential clients.',
+    description: 'Youtap Indonesia is a technology company established through a joint venture between Salim Group and Youtap Global (New Zealand), officially launched in February 2020. The company provides an integrated digital platform that helps businesses of all sizes—from SMEs to large enterprises—digitize their operations.\n\nFor this project, I developed the Youtap Indonesia website to showcase the company\'s digital solutions and business management services. The website features a modern, responsive design that highlights key offerings while delivering a seamless and intuitive user experience for potential clients and business partners.',
     stack: ['Webflow'],
-    image: '',
-    link: 'https://youtap.id/',
+    image: youtapIndonesiaImg,
+    link: 'https://www.youtap.id/',
   },
   {
     title: 'Youtap Kiosk',
