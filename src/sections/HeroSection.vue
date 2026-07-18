@@ -18,7 +18,7 @@ import heroImage from '../assets/images/hero.jpeg'
             Where <span class="text-secondary text-glow">Stunning Aesthetics</span> Meet Flawless Functionality.
           </h1>
           <p class="font-body-lg text-body-lg text-on-surface-variant max-w-lg mb-unit-lg mx-auto md:mx-0">
-            i’m a Front-End Developer & Web Designer with 3 years of experience. I regularly work with Webflow, Wix, WordPress, JavaScript, Astro, and Vue.js. My focus is building clean, responsive, and user-friendly sites—blending modern design with solid performance to keep users hooked. 
+            I’m a Front-End Developer and Web Designer with 3 years of experience under my belt. I mostly spend my time creating clean, responsive, and easy-to-use websites. For me, blending modern visuals with fast performance is the key to keeping users happy and comfortable. 
             <br>
 
 I’m currently open to full-time (WFH/WFO), freelance, part-time, or project-based roles. Let’s team up!"
