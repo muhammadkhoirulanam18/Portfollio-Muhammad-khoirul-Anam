@@ -66,7 +66,7 @@ Have a project in mind, a position to fill, or just want to say hi? Drop me a me
 <script setup>
 import { onMounted } from 'vue'
 import Navbar from '../components/Navbar.vue'
-import CTA from '../sections/CTA.vue'
+import CTA from '../components/CTA.vue'
 
 onMounted(() => {
   window.scrollTo(0, 0)

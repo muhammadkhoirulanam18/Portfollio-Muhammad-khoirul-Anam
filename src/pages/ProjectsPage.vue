@@ -1,7 +1,7 @@
 <script setup lang="ts">
 import { onMounted } from 'vue'
 import Navbar from '../components/Navbar.vue'
-import CTA from '../sections/CTA.vue'
+import CTA from '../components/CTA.vue'
 import { projects } from '../data/projects'
 
 onMounted(() => {
