@@ -18,7 +18,7 @@ const featuredProjects = computed(() => {
        dengan card bergaya glassmorphism + hover effect.
   ───────────────────────────────────────────────── -->
   <section id="work" class="py-section-padding">
-    <div class="max-w-container-max mx-auto px-gutter mb-section-padding text-center md:text-left">
+    <div class="max-w-container-max mx-auto px-gutter mb-section-padding text-left">
       <span class="font-label-mono text-label-mono text-secondary mb-unit-sm block uppercase">Some things I've built</span>
       <h2 class="font-headline-md text-headline-md text-primary">Selected Work That Delivers Results</h2>
     </div>

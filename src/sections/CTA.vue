@@ -4,16 +4,16 @@
     <div class="bg-[#111215] rounded-2xl overflow-hidden grid grid-cols-1 md:grid-cols-12 items-center relative border border-neutral-800">
       
       <!-- Kiri: Konten Teks -->
-      <div class="p-8 md:p-16 md:col-span-7 space-y-6 z-10 text-center md:text-left flex flex-col items-center md:items-start">
+      <div class="p-8 md:p-16 md:col-span-7 space-y-6 z-10 text-left flex flex-col items-start">
         <h2 class="text-3xl md:text-4xl font-semibold tracking-tight leading-tight text-white">
           Let’s Work Together
         </h2>
-        <p class="text-neutral-400 text-sm md:text-base leading-relaxed max-w-xl mx-auto md:mx-0">
+        <p class="text-neutral-400 text-sm md:text-base leading-relaxed max-w-xl">
           I am always open to new opportunities, including freelance, part-time, or full-time work. 
           If you have a potential project or would like to connect, please don’t hesitate to contact 
           me—I will do my best to respond as promptly as possible.
         </p>
-        <div class="pt-4 w-full flex justify-center md:justify-start">
+        <div class="pt-4 w-full flex justify-start">
           <a 
             href="https://wa.me/6285783928671"
             target="_blank"
