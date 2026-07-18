@@ -22,7 +22,7 @@ onMounted(() => {
         <div
           v-for="(project, index) in projects"
           :key="project.title"
-          class="glass-card rounded-2xl p-unit-md md:p-unit-lg group transition-all duration-300 hover:-translate-y-2 flex flex-col relative overflow-hidden"
+          class="glass-card rounded-2xl p-unit-md md:p-unit-lg group transition-all duration-300 hover:-translate-y-2 flex flex-col relative overflow-hidden text-left"
         >
           <!-- Project Thumbnail (or placeholder) -->
           <div class="w-full rounded-xl overflow-hidden mb-unit-md shadow-lg bg-surface-variant flex items-center justify-center relative group-hover:shadow-primary/20 transition-all duration-300">
