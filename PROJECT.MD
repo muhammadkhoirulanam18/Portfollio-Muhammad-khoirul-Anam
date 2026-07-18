@@ -86,7 +86,7 @@ src/
      - Deskripsi singkat proyek
      - Tech stack yang digunakan (mis. "Built with WordPress", "Built with Webflow")
      - Tombol "Visit Website"
-   - Contoh proyek yang tampil: Numerix Accounting, Youtap Kiosk, Youtap POS, Youtap PAY, Youtap BOS, Youtap Solution, Tinago, Home Fresh Indonesia, Dinamika Bio Pakologi, Serenity Bali, Windotu Apparel, Energy Event, Bali Express Laundry, Service Brankas.com, Youtap Loyalty
+     - Contoh proyek yang tampil: Numerix Accounting, Youtap Indonesia, Youtap Kiosk, Youtap POS, Youtap PAY, Youtap BOS, Youtap Solution, Tinago, Home Fresh Indonesia, Dinamika Bio Pakologi, Serenity Bali, Windotu Apparel, Energy Event, Bali Express Laundry, Service Brankas.com, Youtap Loyalty
 
 3. **Companies I've Worked With**
    - Daftar logo/nama perusahaan klien (mis. Oleifi Group, Youtap Indonesia, Dinamika Bio Pakologi)

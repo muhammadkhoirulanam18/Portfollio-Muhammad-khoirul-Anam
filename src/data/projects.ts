@@ -32,6 +32,14 @@ export const projects: Project[] = [
     link: 'https://numerixaccounting.com.au/',
   },
   {
+    title: 'Youtap Indonesia',
+    category: 'Website',
+    description: 'I developed the Youtap Indonesia website to showcase their digital solutions and business management tools. The project involved creating a modern, responsive layout that highlights key services and provides a seamless user experience for potential clients.',
+    stack: ['Webflow'],
+    image: '',
+    link: 'https://youtap.id/',
+  },
+  {
     title: 'Youtap Kiosk',
     category: 'Website',
     description: 'Empower your customers and streamline business operations through a modern Self Order Kiosk application. Designed to handle multiple order types and payment methods, this solution helps reduce queue times, improve efficiency, and enhance overall customer satisfaction.',

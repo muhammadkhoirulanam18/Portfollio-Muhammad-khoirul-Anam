@@ -1,8 +1,14 @@
 <script setup lang="ts">
 import { computed } from 'vue'
 import { projects } from '../data/projects'
+import type { Project } from '../data/projects'
 
-const featuredProjects = computed(() => projects.filter(p => p.image).slice(0, 4))
+const featuredProjects = computed(() => {
+  const targetTitles = ['Numerix Accounting', 'Youtap Indonesia', 'Youtap Loyalty', 'Bali Express Laundry']
+  return targetTitles
+    .map(title => projects.find(p => p.title === title))
+    .filter((p): p is Project => p !== undefined)
+})
 </script>
 
 <template>
