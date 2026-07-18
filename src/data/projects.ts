@@ -35,7 +35,7 @@ export const projects: Project[] = [
   {
     title: 'Youtap Indonesia',
     category: 'Website',
-    description: 'Youtap Indonesia is a technology company established through a joint venture between Salim Group and Youtap Global (New Zealand), officially launched in February 2020. The company provides an integrated digital platform that helps businesses of all sizes—from SMEs to large enterprises—digitize their operations.\n\nFor this project, I developed the Youtap Indonesia website to showcase the company\'s digital solutions and business management services. The website features a modern, responsive design that highlights key offerings while delivering a seamless and intuitive user experience for potential clients and business partners.',
+    description: 'Youtap Indonesia is a technology company established through a joint venture between Salim Group and Youtap Global (New Zealand), officially launched in February 2020. The company provides an integrated digital platform that helps businesses of all sizes—from SMEs to large enterprises—digitize their operations.,
     stack: ['Webflow'],
     image: youtapIndonesiaImg,
     link: 'https://www.youtap.id/',
