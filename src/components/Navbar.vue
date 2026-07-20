@@ -26,7 +26,7 @@ const toggleMenu = () => {
 
       <!-- Desktop Nav -->
       <div class="hidden md:flex gap-unit-lg items-center">
-        <router-link :key="link.name" class="font-label-mono text-label-mono text-on-surface-variant hover:text-secondary transition-colors duration-300" :to="link.path" v-for="link in navigation_links">
+        <router-link :key="link.name" class="font-label-mono text-label-mono text-on-surface-variant hover:text-secondary transition-colors duration-300 border-b-2 border-transparent pb-1" active-class="!text-secondary !border-secondary" :to="link.path" v-for="link in navigation_links">
           {{ link.name }}
         </router-link>
         <router-link to="/contact" class="bg-secondary text-on-secondary px-unit-lg py-unit-sm rounded-full font-label-mono text-label-mono hover:scale-95 transition-all inline-block text-center">
@@ -59,6 +59,7 @@ const toggleMenu = () => {
         <router-link 
           :key="link.name" 
           class="font-label-mono text-lg text-primary hover:text-secondary transition-colors duration-300 border-b border-surface-variant pb-4" 
+          active-class="!text-secondary !border-secondary"
           :to="link.path" 
           v-for="link in navigation_links"
           @click="toggleMenu"
