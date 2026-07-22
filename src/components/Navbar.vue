@@ -42,17 +42,20 @@ const toggleMenu = () => {
       </button>
 
       <!-- Mobile Sidebar Overlay -->
-      <div 
-        class="fixed inset-0 bg-black/60 backdrop-blur-sm z-40 transition-opacity md:hidden"
-        :class="isMenuOpen ? 'opacity-100 visible' : 'opacity-0 invisible'"
-        @click="toggleMenu"
-      ></div>
+      <Transition name="fade">
+        <div 
+          v-if="isMenuOpen"
+          class="fixed inset-0 bg-black/60 backdrop-blur-sm z-40 md:hidden"
+          @click="toggleMenu"
+        ></div>
+      </Transition>
 
       <!-- Mobile Sidebar Menu -->
-      <div 
-        class="fixed top-0 right-0 h-screen w-64 bg-surface border-l border-primary/10 shadow-2xl z-40 transform transition-transform duration-300 ease-in-out md:hidden flex flex-col pt-24 px-6 gap-6"
-        :class="isMenuOpen ? 'translate-x-0' : 'translate-x-full'"
-      >
+      <Transition name="slide-fade">
+        <div 
+          v-if="isMenuOpen"
+          class="fixed top-0 right-0 h-screen w-64 bg-surface border-l border-primary/10 shadow-2xl z-40 md:hidden flex flex-col pt-24 px-6 gap-6"
+        >
         <router-link 
           :key="link.name" 
           class="font-label-mono text-lg text-primary hover:text-secondary transition-colors duration-300 border-b border-surface-variant pb-4" 
@@ -66,12 +69,13 @@ const toggleMenu = () => {
         
         <router-link 
           to="/contact" 
-          class="bg-secondary text-on-secondary px-unit-lg py-3 rounded-full font-label-mono text-center font-bold mt-4 hover:scale-95 transition-all shadow-lg shadow-secondary/20"
+          class="bg-secondary text-on-secondary px-unit-lg py-3 rounded-full font-label-mono text-center font-bold mt-4 transition-all duration-300 ease-out hover:-translate-y-1 hover:shadow-lg hover:shadow-secondary/20"
           @click="toggleMenu"
         >
           Hire Me
         </router-link>
       </div>
+      </Transition>
     </div>
   </nav>
 </template>

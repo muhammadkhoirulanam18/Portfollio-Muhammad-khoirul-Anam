@@ -13,17 +13,17 @@ import heroImage from '../assets/images/hero.jpeg'
       <div class="absolute inset-0 bg-mesh -z-10"></div>
       <div class="max-w-container-max mx-auto px-gutter grid md:grid-cols-2 gap-12 md:gap-unit-lg items-center">
         <div class="text-left order-2 md:order-1 flex flex-col items-start">
-          <span class="font-label-mono text-label-mono text-secondary tracking-widest block mb-unit-md">Hi There!</span>
-          <h1 class="font-display-lg text-display-lg-mobile md:text-display-lg text-primary mb-unit-lg leading-none">
+          <span v-reveal="{ delay: 0 }" class="font-label-mono text-label-mono text-secondary tracking-widest block mb-unit-md">Hi There!</span>
+          <h1 v-reveal="{ delay: 100 }" class="font-display-lg text-display-lg-mobile md:text-display-lg text-primary mb-unit-lg leading-none">
             Where <span class="text-secondary text-glow">Stunning Aesthetics</span> Meet Flawless Functionality.
           </h1>
-          <p class="font-body-lg text-body-lg text-on-surface-variant max-w-lg mb-unit-lg">
+          <p v-reveal="{ delay: 200 }" class="font-body-lg text-body-lg text-on-surface-variant max-w-lg mb-unit-lg">
             I’m a Front-End Developer and Web Designer with 3 years of experience under my belt. I mostly spend my time creating clean, responsive, and easy-to-use websites. For me, blending modern visuals with fast performance is the key to keeping users happy and comfortable. 
             <br>
 
 I’m currently open to full-time (WFH/WFO), freelance, part-time, or project-based roles. Let’s team up!"
           </p>
-          <div class="flex flex-wrap items-center justify-start gap-4 md:gap-6 mt-6 w-full">
+          <div v-reveal="{ delay: 300 }" class="flex flex-wrap items-center justify-start gap-4 md:gap-6 mt-6 w-full">
             <!-- Action Buttons Group -->
             <div class="flex flex-wrap items-center gap-3 md:gap-4">
               <button class="bg-secondary text-on-secondary px-6 py-3.5 md:px-unit-lg md:py-unit-md rounded-lg font-label-mono text-xs md:text-sm font-bold hover:bg-secondary/90 transition-all whitespace-nowrap hover:-translate-y-1 shadow-lg hover:shadow-secondary/25">Contact Me</button>
@@ -52,7 +52,7 @@ I’m currently open to full-time (WFH/WFO), freelance, part-time, or project-ba
             </div>
           </div>
         </div>
-        <div class="relative mt-8 md:mt-0 flex justify-center animate-float order-1 md:order-2">
+        <div v-reveal="{ delay: 400 }" class="relative mt-8 md:mt-0 flex justify-center animate-float order-1 md:order-2">
           <div class="relative w-64 h-64 sm:w-80 sm:h-80 md:w-[450px] md:h-[450px] group">
             <!-- Decorative borders with rotation and pulse -->
             <div class="absolute inset-0 rounded-full border border-secondary/30 animate-[spin_10s_linear_infinite] group-hover:border-secondary transition-colors duration-500"></div>

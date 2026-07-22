@@ -18,7 +18,7 @@ const featuredProjects = computed(() => {
        dengan card bergaya glassmorphism + hover effect.
   ───────────────────────────────────────────────── -->
   <section id="work" class="py-section-padding">
-    <div class="max-w-container-max mx-auto px-gutter mb-section-padding text-left">
+    <div v-reveal class="max-w-container-max mx-auto px-gutter mb-section-padding text-left">
       <span class="font-label-mono text-label-mono text-secondary mb-unit-sm block uppercase">Some things I've built</span>
       <h2 class="font-headline-md text-headline-md text-primary">Selected Work That Delivers Results</h2>
     </div>
@@ -29,7 +29,8 @@ const featuredProjects = computed(() => {
         <div
           v-for="(project, index) in featuredProjects"
           :key="project.title"
-          class="glass-card rounded-2xl p-unit-md md:p-unit-lg group transition-all duration-300 hover:-translate-y-2 flex flex-col relative overflow-hidden"
+          v-reveal="{ delay: index * 100 }"
+          class="glass-card rounded-2xl p-unit-md md:p-unit-lg group transition-all duration-300 ease-out hover:-translate-y-1 hover:shadow-xl hover:shadow-primary/20 flex flex-col relative overflow-hidden"
         >
           <!-- Project Thumbnail (or placeholder) -->
           <div class="w-full rounded-xl overflow-hidden mb-unit-md shadow-lg bg-surface-variant flex items-center justify-center relative group-hover:shadow-primary/20 transition-all duration-300">
@@ -85,10 +86,10 @@ const featuredProjects = computed(() => {
       </div> 
 
       <!-- See More Project Button -->
-      <div class="text-center">
+      <div v-reveal="{ delay: 200 }" class="text-center">
         <router-link
           to="/projects"
-          class="inline-block px-unit-lg py-unit-md border border-secondary text-secondary rounded-lg font-bold uppercase tracking-widest text-sm hover:bg-secondary/10 transition-all duration-300 font-label-mono"
+          class="inline-block px-unit-lg py-unit-md border border-secondary text-secondary rounded-lg font-bold uppercase tracking-widest text-sm hover:bg-secondary/10 hover:-translate-y-1 hover:shadow-lg hover:shadow-secondary/20 transition-all duration-300 ease-out font-label-mono"
         >
           See More Project
         </router-link>

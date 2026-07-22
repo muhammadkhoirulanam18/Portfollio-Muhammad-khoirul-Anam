@@ -1,5 +1,5 @@
 <template>
-  <footer class="mt-24 bg-background/80 text-on-surface-variant py-12 px-6 border-t border-primary/10">
+  <footer v-reveal class="mt-24 bg-background/80 text-on-surface-variant py-12 px-6 border-t border-primary/10">
     <div class="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center gap-6">
       
       <!-- Kiri: Logo & Nama Brand -->
