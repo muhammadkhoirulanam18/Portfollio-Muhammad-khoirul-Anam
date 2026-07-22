@@ -1,6 +1,31 @@
 <script setup lang="ts">
-import { ref } from 'vue'
+import { ref, onMounted, onUnmounted } from 'vue'
+import { useRoute } from 'vue-router'
 import profileImg from '../assets/images/PROFILE.png'
+
+const route = useRoute()
+
+const isActive = (path: string) => {
+  if (path.includes('#')) {
+    return route.hash === path.substring(path.indexOf('#'))
+  }
+  return route.path.startsWith(path) && path !== '/'
+}
+
+const isScrolled = ref(false)
+
+const handleScroll = () => {
+  isScrolled.value = window.scrollY > 50
+}
+
+onMounted(() => {
+  window.addEventListener('scroll', handleScroll, { passive: true })
+  handleScroll()
+})
+
+onUnmounted(() => {
+  window.removeEventListener('scroll', handleScroll)
+})
 
 const navigation_links = ref([
   { name: 'Project', path: '/projects' },
@@ -16,8 +41,13 @@ const toggleMenu = () => {
 </script>
 
 <template>
-  <nav class="fixed top-0 w-full z-50 bg-background/80 nav-blur border-b border-primary/10">
-    <div class="flex justify-between items-center px-gutter py-unit-md max-w-container-max mx-auto relative">
+  <nav 
+    :class="[
+      'fixed top-0 w-full z-50 transition-all duration-300',
+      isScrolled ? 'bg-background/80 nav-blur border-b border-primary/10 py-2' : 'bg-transparent border-transparent py-4'
+    ]"
+  >
+    <div class="flex justify-between items-center px-gutter max-w-container-max mx-auto relative">
       <!-- Logo -->
       <router-link to="/" class="flex items-center gap-3 group z-50">
         <img :src="profileImg" alt="Profile" class="w-10 h-10 rounded-full object-cover group-hover:border-primary transition-colors" />
@@ -26,7 +56,15 @@ const toggleMenu = () => {
 
       <!-- Desktop Nav -->
       <div class="hidden md:flex gap-unit-lg items-center">
-        <router-link :key="link.name" class="font-label-mono text-label-mono text-on-surface-variant hover:text-secondary transition-colors duration-300 border-b-2 border-transparent pb-1" active-class="!text-secondary !border-secondary" :to="link.path" v-for="link in navigation_links">
+        <router-link 
+          v-for="link in navigation_links" 
+          :key="link.name" 
+          :class="[
+            'font-label-mono text-label-mono hover:text-secondary transition-colors duration-300 border-b-2 pb-1',
+            isActive(link.path) ? 'text-secondary border-secondary' : 'text-on-surface-variant border-transparent'
+          ]"
+          :to="link.path"
+        >
           {{ link.name }}
         </router-link>
       </div>
@@ -58,8 +96,10 @@ const toggleMenu = () => {
         >
         <router-link 
           :key="link.name" 
-          class="font-label-mono text-lg text-primary hover:text-secondary transition-colors duration-300 border-b border-surface-variant pb-4" 
-          active-class="!text-secondary !border-secondary"
+          :class="[
+            'font-label-mono text-lg hover:text-secondary transition-colors duration-300 border-b border-surface-variant pb-4',
+            isActive(link.path) ? 'text-secondary border-secondary' : 'text-primary'
+          ]"
           :to="link.path" 
           v-for="link in navigation_links"
           @click="toggleMenu"
