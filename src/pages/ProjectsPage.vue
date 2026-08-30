@@ -15,13 +15,14 @@ onMounted(() => {
     <Navbar />
 
     <div class="max-w-container-max mx-auto px-gutter mt-12 mb-section-padding text-center md:text-left">
-      <span class="font-label-mono text-label-mono text-secondary mb-unit-sm block uppercase">All Work</span>
-      <h1 class="font-display-lg text-display-lg-mobile md:text-display-lg text-primary mb-12">Selected Projects</h1>
+      <span v-reveal="{ delay: 0 }" class="font-label-mono text-label-mono text-secondary mb-unit-sm block uppercase">All Work</span>
+      <h1 v-reveal="{ delay: 100 }" class="font-display-lg text-display-lg-mobile md:text-display-lg text-primary mb-12">Selected Projects</h1>
 
       <div class="grid md:grid-cols-2 gap-unit-lg lg:gap-12">
         <div
           v-for="(project, index) in projects"
           :key="project.title"
+          v-reveal="{ delay: (index % 2) * 100 }"
           class="glass-card rounded-2xl p-unit-md md:p-unit-lg group transition-all duration-300 hover:-translate-y-2 flex flex-col relative overflow-hidden text-left"
         >
           <!-- Project Thumbnail (or placeholder) -->
@@ -30,6 +31,7 @@ onMounted(() => {
               v-if="project.image"
               :src="project.image"
               :alt="project.title"
+              loading="lazy"
               class="w-full h-auto object-cover group-hover:scale-105 transition-transform duration-700"
             />
             <div v-else class="w-full aspect-video flex items-center justify-center">

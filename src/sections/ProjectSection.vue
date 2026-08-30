@@ -17,7 +17,7 @@ const featuredProjects = computed(() => {
        Menampilkan 4 proyek pilihan dalam grid 2 kolom
        dengan card bergaya glassmorphism + hover effect.
   ───────────────────────────────────────────────── -->
-  <section id="work" class="py-section-padding">
+  <section id="work" class="py-section-padding overflow-hidden">
     <div v-reveal class="max-w-container-max mx-auto px-gutter mb-section-padding text-left">
       <span class="font-label-mono text-label-mono text-secondary mb-unit-sm block uppercase">Some things I've built</span>
       <h2 class="font-headline-md text-headline-md text-primary">Selected Work That Delivers Results</h2>
@@ -38,6 +38,7 @@ const featuredProjects = computed(() => {
               v-if="project.image"
               :src="project.image"
               :alt="project.title"
+              loading="lazy"
               class="w-full h-auto object-cover group-hover:scale-105 transition-transform duration-700"
             />
             <div v-else class="w-full aspect-video flex items-center justify-center">

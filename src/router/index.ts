@@ -18,6 +18,16 @@ const router = createRouter({
       path: '/contact',
       name: 'contact',
       component: () => import('../pages/ContactPage.vue')
+    },
+    {
+      path: '/blog',
+      name: 'blog',
+      component: () => import('../views/BlogList.vue')
+    },
+    {
+      path: '/blog/:slug',
+      name: 'blog-post',
+      component: () => import('../views/BlogPost.vue')
     }
   ],
   scrollBehavior(to, from, savedPosition) {

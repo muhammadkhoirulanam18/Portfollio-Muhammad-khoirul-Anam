@@ -60,6 +60,7 @@ I’m currently open to full-time (WFH/WFO), freelance, part-time, or project-ba
             
             <!-- Image with scale, glow, and un-grayscale on hover -->
             <img 
+              loading="eager"
               class="w-full h-full object-cover rounded-full grayscale opacity-90 group-hover:grayscale-0 group-hover:opacity-100 group-hover:scale-105 group-hover:shadow-[0_0_40px_rgba(60,220,209,0.4)] transition-all duration-500 ease-out" 
               data-alt="A professional and modern portrait of a developer, Muhammad Khoirul Anam, integrated with technical UI elements and digital overlays. The background is dark obsidian with soft emerald glow accents, matching a high-tech corporate aesthetic. The lighting is dramatic and moody, emphasizing a sharp, professional look suitable for a high-end portfolio." 
               :src="heroImage"

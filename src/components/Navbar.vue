@@ -30,6 +30,7 @@ onUnmounted(() => {
 const navigation_links = ref([
   { name: 'Project', path: '/projects' },
   { name: 'Experience', path: '/#experience' },
+  { name: 'Blog', path: '/blog' },
   { name: 'Contact', path: '/contact' }
 ])
 
