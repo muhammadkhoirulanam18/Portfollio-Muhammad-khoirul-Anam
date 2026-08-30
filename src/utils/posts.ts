@@ -70,10 +70,10 @@ export function getAllPosts(): Post[] {
 
       const readTime = Math.ceil((content.split(/\s+/).length || 0) / 200);
       const tags = data.tags || [];
-      const fallbackImage = slug === 'seo-fundamentals-2026' ? 'https://picsum.photos/seed/seo/1200/800' :
-                            slug === 'website-performance-matters' ? 'https://picsum.photos/seed/perf/1200/800' :
-                            slug === 'mobile-first-design' ? 'https://picsum.photos/seed/mobile/1200/800' :
-                            'https://picsum.photos/seed/blog/1200/800';
+      const fallbackImage = slug === 'seo-fundamentals-2026' ? 'https://images.unsplash.com/photo-1460925895917-afdab827c52f?q=80&w=1200&auto=format&fit=crop' :
+                            slug === 'website-performance-matters' ? 'https://images.unsplash.com/photo-1558494949-ef010cbdcc31?q=80&w=1200&auto=format&fit=crop' :
+                            slug === 'mobile-first-design' ? 'https://images.unsplash.com/photo-1555421689-d68471e189f2?q=80&w=1200&auto=format&fit=crop' :
+                            'https://images.unsplash.com/photo-1555066931-4365d14bab8c?q=80&w=1200&auto=format&fit=crop';
 
       posts.push({
         slug,
