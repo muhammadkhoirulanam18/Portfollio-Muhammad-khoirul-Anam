@@ -19,11 +19,12 @@ onMounted(() => {
       <h1 v-reveal="{ delay: 100 }" class="font-display-lg text-display-lg-mobile md:text-display-lg text-primary mb-12">Selected Projects</h1>
 
       <div class="grid md:grid-cols-2 gap-unit-lg lg:gap-12">
-        <div
+        <router-link
           v-for="(project, index) in projects"
           :key="project.title"
+          :to="'/project/' + project.slug"
           v-reveal="{ delay: (index % 2) * 100 }"
-          class="glass-card rounded-2xl p-unit-md md:p-unit-lg group transition-all duration-300 hover:-translate-y-2 flex flex-col relative overflow-hidden text-left"
+          class="glass-card rounded-2xl p-unit-md md:p-unit-lg group transition-all duration-300 hover:-translate-y-2 flex flex-col relative overflow-hidden text-left block"
         >
           <!-- Project Thumbnail (or placeholder) -->
           <div class="w-full rounded-xl overflow-hidden mb-unit-md shadow-lg bg-surface-variant flex items-center justify-center relative group-hover:shadow-primary/20 transition-all duration-300">
@@ -68,15 +69,11 @@ onMounted(() => {
           </div>
 
           <!-- View Project Link -->
-          <a
-            :href="project.link"
-            target="_blank"
-            class="mt-auto inline-flex items-center gap-2 text-secondary text-xs font-bold tracking-widest uppercase font-label-mono group/link hover:text-primary transition-colors duration-300"
-          >
+          <div class="mt-auto inline-flex items-center gap-2 text-secondary text-xs font-bold tracking-widest uppercase font-label-mono hover:text-primary transition-colors duration-300">
             View Project
-            <span class="group-hover/link:translate-x-1 transition-transform duration-300">→</span>
-          </a>
-        </div>
+            <span class="group-hover:translate-x-1 transition-transform duration-300">→</span>
+          </div>
+        </router-link>
       </div>
     </div>
     

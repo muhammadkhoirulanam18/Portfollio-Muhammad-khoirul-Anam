@@ -26,11 +26,12 @@ const featuredProjects = computed(() => {
     <div class="max-w-container-max mx-auto px-gutter">
       <!-- Card Grid: 2 columns on tablet, 2 or 3 on large screens to avoid cards being too huge -->
       <div class="grid md:grid-cols-2 gap-unit-lg lg:gap-12 mb-section-padding">
-        <div
+        <router-link
           v-for="(project, index) in featuredProjects"
           :key="project.title"
+          :to="'/project/' + project.slug"
           v-reveal="{ delay: index * 100 }"
-          class="glass-card rounded-2xl p-unit-md md:p-unit-lg group transition-all duration-300 ease-out hover:-translate-y-1 hover:shadow-xl hover:shadow-primary/20 flex flex-col relative overflow-hidden"
+          class="glass-card rounded-2xl p-unit-md md:p-unit-lg group transition-all duration-300 ease-out hover:-translate-y-1 hover:shadow-xl hover:shadow-primary/20 flex flex-col relative overflow-hidden block"
         >
           <!-- Project Thumbnail (or placeholder) -->
           <div class="w-full rounded-xl overflow-hidden mb-unit-md shadow-lg bg-surface-variant flex items-center justify-center relative group-hover:shadow-primary/20 transition-all duration-300">
@@ -75,15 +76,11 @@ const featuredProjects = computed(() => {
           </div>
 
           <!-- View Project Link -->
-          <a
-            :href="project.link"
-            target="_blank"
-            class="mt-auto inline-flex items-center gap-2 text-secondary text-xs font-bold tracking-widest uppercase font-label-mono group/link hover:text-primary transition-colors duration-300"
-          >
+          <div class="mt-auto inline-flex items-center gap-2 text-secondary text-xs font-bold tracking-widest uppercase font-label-mono hover:text-primary transition-colors duration-300">
             View Project
-            <span class="group-hover/link:translate-x-1 transition-transform duration-300">→</span>
-          </a>
-        </div>
+            <span class="group-hover:translate-x-1 transition-transform duration-300">→</span>
+          </div>
+        </router-link>
       </div> 
 
       <!-- See More Project Button -->

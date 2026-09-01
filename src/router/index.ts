@@ -28,6 +28,11 @@ const router = createRouter({
       path: '/blog/:slug',
       name: 'blog-post',
       component: () => import('../views/BlogPost.vue')
+    },
+    {
+      path: '/project/:slug',
+      name: 'project-detail',
+      component: () => import('../pages/ProjectDetailPage.vue')
     }
   ],
   scrollBehavior(to, from, savedPosition) {
