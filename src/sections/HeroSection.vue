@@ -18,7 +18,7 @@ import heroImage from '../assets/images/hero.jpeg'
             Where <span class="text-secondary text-glow">Stunning Aesthetics</span> Meet Flawless Functionality.
           </h1>
           <p v-reveal="{ delay: 200 }" class="font-body-lg text-body-lg text-on-surface-variant max-w-lg mb-unit-lg">
-            I’m a Front-End Developer and Web Designer with 3 years of experience under my belt. I mostly spend my time creating clean, responsive, and easy-to-use websites. For me, blending modern visuals with fast performance is the key to keeping users happy and comfortable. 
+            I’m a Front-End Developer and Web Designer with 2 years of experience under my belt. I mostly spend my time creating clean, responsive, and easy-to-use websites. For me, blending modern visuals with fast performance is the key to keeping users happy and comfortable. 
             <br>
 
 I’m currently open to full-time (WFH/WFO), freelance, part-time, or project-based roles. Let’s team up!"
@@ -26,7 +26,7 @@ I’m currently open to full-time (WFH/WFO), freelance, part-time, or project-ba
           <div v-reveal="{ delay: 300 }" class="flex flex-wrap items-center justify-start gap-4 md:gap-6 mt-6 w-full">
             <!-- Action Buttons Group -->
             <div class="flex flex-wrap items-center gap-3 md:gap-4">
-              <button class="bg-secondary text-on-secondary px-6 py-3.5 md:px-unit-lg md:py-unit-md rounded-lg font-label-mono text-xs md:text-sm font-bold hover:bg-secondary/90 transition-all whitespace-nowrap hover:-translate-y-1 shadow-lg hover:shadow-secondary/25">Contact Me</button>
+              <a href="https://wa.me/6285783928671" target="_blank" class="inline-block bg-secondary text-on-secondary px-6 py-3.5 md:px-unit-lg md:py-unit-md rounded-lg font-label-mono text-xs md:text-sm font-bold hover:bg-secondary/90 transition-all whitespace-nowrap hover:-translate-y-1 shadow-lg hover:shadow-secondary/25">Contact Me</a>
               <a href="https://drive.google.com/drive/folders/1MMk6e4dv27pdPVRk3e37lqNWwMzffBN4?usp=drive_link" download class="border border-secondary/30 text-secondary px-6 py-3.5 md:px-unit-lg md:py-unit-md rounded-lg font-label-mono text-xs md:text-sm font-bold hover:bg-secondary/10 transition-all flex items-center gap-2 whitespace-nowrap hover:-translate-y-1 hover:border-secondary/60">
                 Download CV
                 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-4 h-4">
