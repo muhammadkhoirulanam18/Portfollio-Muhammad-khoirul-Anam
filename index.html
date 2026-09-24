@@ -1,7 +1,15 @@
 <!doctype html>
-<html lang="en" class="dark scroll-smooth">
+<html lang="en" class="scroll-smooth">
   <head>
     <meta charset="UTF-8" />
+    <script>
+      // Prevent FOUC (Flash of Unstyled Content) by checking theme before mounting Vue
+      if (localStorage.getItem('theme') === 'dark' || (!('theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+        document.documentElement.classList.add('dark');
+      } else {
+        document.documentElement.classList.remove('dark');
+      }
+    </script>
     <link rel="icon" type="image/png" href="/src/assets/images/PROFILE.png" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Muhammad Khoirul Anam - Web Developer | Designer</title>

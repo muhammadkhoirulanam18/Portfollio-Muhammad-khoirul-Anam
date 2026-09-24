@@ -1,14 +1,14 @@
 <template>
   <!-- SECTION 2: CTA BANNER (Foto Kedua) -->
   <section class="py-16 px-6 max-w-7xl mx-auto">
-    <div class="bg-[#111215] rounded-2xl overflow-hidden grid grid-cols-1 md:grid-cols-12 items-center relative border border-neutral-800">
+    <div class="bg-surface-variant/30 rounded-2xl overflow-hidden grid grid-cols-1 md:grid-cols-12 items-center relative border border-outline-variant transition-colors">
       
       <!-- Kiri: Konten Teks -->
       <div v-reveal="{ delay: 0 }" class="p-8 md:p-16 md:col-span-7 space-y-6 z-10 text-left flex flex-col items-start">
-        <h2 class="text-3xl md:text-4xl font-semibold tracking-tight leading-tight text-white">
+        <h2 class="text-3xl md:text-4xl font-semibold tracking-tight leading-tight text-primary transition-colors">
           Let’s Work Together
         </h2>
-        <p class="text-neutral-400 text-sm md:text-base leading-relaxed max-w-xl">
+        <p class="text-on-surface-variant text-sm md:text-base leading-relaxed max-w-xl transition-colors">
           I am always open to new opportunities, including freelance, part-time, or full-time work. 
           If you have a potential project or would like to connect, please don’t hesitate to contact 
           me—I will do my best to respond as promptly as possible.

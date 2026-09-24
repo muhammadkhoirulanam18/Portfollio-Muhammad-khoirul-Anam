@@ -2,9 +2,42 @@
 @tailwind components;
 @tailwind utilities;
 
+:root {
+  --color-background: #ffffff;
+  --color-surface: #f8f9fa;
+  --color-primary: #121317;
+  --color-secondary: #007774;
+  --color-on-surface: #121317;
+  --color-on-surface-variant: #3e4753;
+  --color-surface-variant: #e3e2e8;
+  --color-on-primary: #ffffff;
+  --color-on-secondary: #ffffff;
+  --color-on-background: #121317;
+  --color-outline-variant: #e3e2e8;
+}
+
+.dark {
+  --color-background: #121317;
+  --color-surface: #121317;
+  --color-primary: #ffffff;
+  --color-secondary: #7bd6d1;
+  --color-on-surface: #e3e2e8;
+  --color-on-surface-variant: #bacac7;
+  --color-surface-variant: #343439;
+  --color-on-primary: #003734;
+  --color-on-secondary: #003735;
+  --color-on-background: #e3e2e8;
+  --color-outline-variant: #3c4948;
+}
+
 @layer base {
   body {
-    @apply antialiased text-[#e3e2e8] bg-background font-sans overflow-x-hidden;
+    @apply antialiased text-[color:var(--color-on-surface,#e3e2e8)] bg-background font-sans overflow-x-hidden;
+  }
+  
+  /* Global smooth transition for theme switching */
+  *, ::before, ::after {
+    @apply transition-colors duration-500 ease-in-out;
   }
 }
 

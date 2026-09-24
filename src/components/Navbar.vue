@@ -1,9 +1,12 @@
 <script setup lang="ts">
 import { ref, onMounted, onUnmounted } from 'vue'
 import { useRoute } from 'vue-router'
+import { Sun, Moon } from 'lucide-vue-next'
+import { useTheme } from '../composables/useTheme'
 import profileImg from '../assets/images/PROFILE.png'
 
 const route = useRoute()
+const { isDark, toggleTheme } = useTheme()
 
 const isActive = (path: string) => {
   if (path.includes('#')) {
@@ -68,17 +71,44 @@ const toggleMenu = () => {
         >
           {{ link.name }}
         </router-link>
+        
+        <!-- Dark Mode Toggle Desktop -->
+        <button 
+          @click="toggleTheme" 
+          class="p-2 rounded-full hover:bg-surface-variant transition-colors text-primary focus:outline-none focus:ring-2 focus:ring-secondary/50 ml-2" 
+          aria-label="Toggle Dark Mode"
+        >
+          <Transition name="fade" mode="out-in">
+            <Sun v-if="!isDark" class="w-5 h-5 text-secondary" />
+            <Moon v-else class="w-5 h-5" />
+          </Transition>
+        </button>
       </div>
 
-      <!-- Hamburger Button (Mobile) -->
-      <button @click="toggleMenu" class="md:hidden text-primary z-50 p-2 focus:outline-none" aria-label="Toggle Menu">
-        <svg v-if="!isMenuOpen" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="w-6 h-6">
-          <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5M12 17.25h8.25" />
-        </svg>
-        <svg v-else xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="w-6 h-6">
-          <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
-        </svg>
-      </button>
+      <!-- Mobile Right Actions -->
+      <div class="flex items-center gap-2 md:hidden z-50">
+        <!-- Dark Mode Toggle Mobile -->
+        <button 
+          @click="toggleTheme" 
+          class="p-2 rounded-full text-primary focus:outline-none transition-colors" 
+          aria-label="Toggle Dark Mode"
+        >
+          <Transition name="fade" mode="out-in">
+            <Sun v-if="!isDark" class="w-5 h-5 text-secondary" />
+            <Moon v-else class="w-5 h-5" />
+          </Transition>
+        </button>
+
+        <!-- Hamburger Button (Mobile) -->
+        <button @click="toggleMenu" class="text-primary p-2 focus:outline-none" aria-label="Toggle Menu">
+          <svg v-if="!isMenuOpen" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="w-6 h-6">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5M12 17.25h8.25" />
+          </svg>
+          <svg v-else xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="w-6 h-6">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+          </svg>
+        </button>
+      </div>
 
       <!-- Mobile Sidebar Overlay -->
       <Transition name="fade">
