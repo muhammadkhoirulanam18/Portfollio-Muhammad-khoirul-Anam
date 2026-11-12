@@ -8,7 +8,7 @@ export function useTheme() {
     if (savedTheme) {
       isDark.value = savedTheme === 'dark';
     } else {
-      isDark.value = window.matchMedia('(prefers-color-scheme: dark)').matches;
+      isDark.value = true;
     }
     // No need to apply here because index.html script handles initial FOUC prevention.
     // We just want to sync the state with what index.html applied.

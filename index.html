@@ -4,10 +4,10 @@
     <meta charset="UTF-8" />
     <script>
       // Prevent FOUC (Flash of Unstyled Content) by checking theme before mounting Vue
-      if (localStorage.getItem('theme') === 'dark' || (!('theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
-        document.documentElement.classList.add('dark');
-      } else {
+      if (localStorage.getItem('theme') === 'light') {
         document.documentElement.classList.remove('dark');
+      } else {
+        document.documentElement.classList.add('dark');
       }
     </script>
     <link rel="icon" type="image/png" href="/src/assets/images/PROFILE.png" />

@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import Navbar from '../components/Navbar.vue'
-import heroImage from '../assets/images/hero.jpeg'
+import heroImage from '../assets/images/Foto profile.jpeg'
 </script>
 
 <template>

@@ -1,7 +1,15 @@
 <!doctype html>
-<html lang="en" class="dark scroll-smooth">
+<html lang="en" class="scroll-smooth">
   <head>
     <meta charset="UTF-8" />
+    <script>
+      // Prevent FOUC (Flash of Unstyled Content) by checking theme before mounting Vue
+      if (localStorage.getItem('theme') === 'light') {
+        document.documentElement.classList.remove('dark');
+      } else {
+        document.documentElement.classList.add('dark');
+      }
+    </script>
     <link rel="icon" type="image/png" href="/assets/PROFILE-6B8tBU2e.png" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Muhammad Khoirul Anam - Web Developer | Designer</title>
@@ -24,14 +32,12 @@
 
     <link href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@400;500;600;700;800&family=JetBrains+Mono:wght@500&display=swap" rel="stylesheet" />
     <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet" />
-    <script type="module" crossorigin src="/assets/index-vJoIVpny.js"></script>
-    <link rel="modulepreload" crossorigin href="/assets/Navbar-B_uBNVn8.js">
+    <script type="module" crossorigin src="/assets/index-CtTMA4S9.js"></script>
+    <link rel="modulepreload" crossorigin href="/assets/Navbar-BB3jSdwu.js">
     <link rel="modulepreload" crossorigin href="/assets/_plugin-vue_export-helper-BDNMzG2s.js">
-    <link rel="modulepreload" crossorigin href="/assets/TheFooter-AqDiS2X9.js">
     <link rel="modulepreload" crossorigin href="/assets/projects-B_N90fPM.js">
-    <link rel="modulepreload" crossorigin href="/assets/CTA-bDaxzAoA.js">
-    <link rel="stylesheet" crossorigin href="/assets/TheFooter-x1XGuNl0.css">
-    <link rel="stylesheet" crossorigin href="/assets/index-LqtW_lSz.css">
+    <link rel="modulepreload" crossorigin href="/assets/CTA-HxxfwBJ8.js">
+    <link rel="stylesheet" crossorigin href="/assets/index-m4rjAmoB.css">
   </head>
   <body>
     <div id="app"></div>
